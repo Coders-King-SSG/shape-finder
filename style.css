@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f88f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(45deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    padding: 15px 0px 15px 0px;
+    animation: glow_button infinite 8s linear;
+}
+
+main {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes glow_button {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+
+h1 {
+    color: aliceblue;
+}
+
+#canvas {
+    width: 80%;
+    height: 70%;
+    border: white 5px ridge;
+    background-color: rgb(14, 187, 14);
+    display: block;
+}
+
+td {
+    border: 3px black solid;
+    padding: 5px;
+}
+
+#confetti_div {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://video-public.canva.com/VADhwR4IDLA/videos/33e2ab77d9.gif');
+    background-size: 20%;
+    background-color: rgba(0, 0, 0, 0.781);
+    /* background-size: 300%; */
+    /* animation: glow_button infinite 8s; */
+}
+
+#shapeInput {
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 5px solid hotpink;
+    background: rgba(255, 68, 0, 0.541);
+    color: #fff;
+    outline: none;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px;
+    background: darkgoldenrod;
+    color: #fff;
+    border: rgb(255, 183, 0) 2px solid;
+    border-radius: 10px;
+}
+
+#shapeInput::placeholder {
+    color: #fff;
+}

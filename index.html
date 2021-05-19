@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="change()">
+    <header>
+        <h1>Shape Finder</h1>
+    </header>
+    <main>
+        <canvas id="canvas"></canvas>
+        <table>
+            <tr>
+                <td>Marks</td>
+                <td id="marks">0</td>
+            </tr>
+        </table>
+        <input type="text" id="shapeInput" placeholder="Enter the shape name." maxlength="15">
+        <button class="btn" onclick="change()">Enter</button>
+    </main>
+    <div id="confetti_div">
+        <h1 style="color: blanchedalmond;font-size: 150px;">You won!!!</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
